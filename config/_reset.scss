@@ -1,0 +1,25 @@
+body{
+	background-color:rgb(178, 170, 170);
+}
+@mixin animation($name_animation, $time, $effect) {
+	animation: $name_animation $effect $time;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	animation-fill-mode: forwards;
+	-webkit-animation: $name_animation $effect $time;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation: $name_animation $effect $time;
+	-moz-animation-iteration-count: infinite;
+	-moz-transform-origin: 50% 50%;
+	-moz-animation-fill-mode: forwards;
+	-o-animation: $name_animation $effect $time;
+	-o-animation-iteration-count: infinite;
+	-o-transform-origin: 50% 50%;
+	-o-animation-fill-mode: forwards;
+	-ms-animation: $name_animation $effect $time;
+	-ms-animation-iteration-count: infinite;
+	-ms-transform-origin: 50% 50%;
+	-ms-animation-fill-mode: forwards;
+}
